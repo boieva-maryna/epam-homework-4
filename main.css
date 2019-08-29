@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+html{
+    font-family: 'Muli',sans-serif;
+    background:white;
+}
+body{
+    margin: 0;
+    padding: 0 5%;
+}
+a{
+    text-decoration: none;
+}
+a:active,a:hover,a:visited{
+    color: #E73B5A;
+}
+a:visited{
+    text-decoration: line-through;
+}
+header{
+    letter-spacing: 0.3rem;
+    background-image:linear-gradient(60deg, #fff 0, #fff 60%, #b8daf3 60%, #b8daf3 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 88%, 78% 100%, 0 100%, 0 0);
+}
+header a:active, header a:hover{
+    border-bottom:0.3rem #000 dotted;
+}
+
+.header-menu-nav,.footer-ul-social{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.top-block-name{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+     position: relative;
+}
+.top-block-name::after{
+    content: "Lorem ipsun tardi";
+    color: #E73B5A;
+     position: absolute;
+     left: 0.3rem;
+     top:0.3rem;
+     z-index: -1;
+     text-shadow: none;
+}
+.right-block-photo{
+    width: 30%;
+    height: 30%;
+}
+.right-block-photo img{
+    display: block;
+    height: 0%;
+    width: 0%;
+    border:solid;
+    border-image-slice: 20 20 20 20; 
+    border-image-width: 10px 10px 10px 10px; 
+    border-image-outset: 5px 5px 5px 5px; 
+    border-image-repeat: stretch stretch;
+    border-image-source: url(images/frame.png);
+    animation:roll 2s cubic-bezier(1,-0.08,0,.75) 1 normal forwards;
+}
+@keyframes roll{
+    10%{
+        width: 10%;
+        height: 25%;
+    }
+    55%{
+        width: 75%;
+        height: 75%;
+    }
+    75%{
+        height: 75%;
+        width: 55%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+.main-btn-learn, .btn-search{
+    font-size: 1rem;
+    border: 2px solid black;
+    -webkit-box-shadow: 4px -2px 0px 2px #000000; 
+    box-shadow: 4px -2px 0px 2px #000000;
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    text-transform: uppercase;
+}
+@media (min-width: 1400px){
+    html{
+        font-size: 1vw;
+    }
+}

@@ -3,9 +3,8 @@ html{
     font-family: 'Muli',sans-serif;
     background:white;
 }
-body{
-    margin: 0;
-    padding: 0 5%;
+header,main,footer{
+    padding: 10px;
 }
 a{
     text-decoration: none;
@@ -18,8 +17,8 @@ a:visited{
 }
 header{
     letter-spacing: 0.3rem;
-    background-image:linear-gradient(60deg, #fff 0, #fff 60%, #b8daf3 60%, #b8daf3 100%);
-    clip-path: polygon(50% 0%, 100% 0, 100% 88%, 78% 100%, 0 100%, 0 0);
+    background-image:linear-gradient(60deg, #fff 0, #fff 60%,#b8daf3 60%, #b8daf3 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 80% 100%, 0 100%, 0 0);
 }
 header a:active, header a:hover{
     border-bottom:0.3rem #000 dotted;
@@ -28,13 +27,13 @@ header a:active, header a:hover{
 .header-menu-nav,.footer-ul-social{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
 }
 .top-block-name{
-    font-size: 3rem;
+    font-size: 3.3rem;
     text-transform: uppercase;
     color: white;
     text-shadow:
@@ -52,6 +51,9 @@ header a:active, header a:hover{
      top:0.3rem;
      z-index: -1;
      text-shadow: none;
+}
+#link-top-block{
+    padding-left: 2rem;
 }
 .right-block-photo{
     width: 30%;
@@ -93,12 +95,62 @@ header a:active, header a:hover{
     -webkit-box-shadow: 4px -2px 0px 2px #000000; 
     box-shadow: 4px -2px 0px 2px #000000;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     background: white;
     text-transform: uppercase;
 }
 @media (min-width: 1400px){
     html{
         font-size: 1vw;
+    }
+    .top-block-name{
+        font-size: 4.5rem;
+    }
+}
+@media (min-width:1024px){
+    header{
+        background-image:linear-gradient(60deg, #fff 0, #fff 50%, #b8daf3 50%, #b8daf3 100%);
+    }
+}
+@media (max-width:767px){
+    .top-block-name{
+        font-size: 2.5rem;
+    }
+    .top-block-name::after{
+        top: 0.25rem;
+        left: 0.25rem;
+    }
+}
+@media (max-width:599px){
+    header{
+        clip-path: none;
+        background-image:linear-gradient(40deg, #fff 0, #fff 50%, #b8daf3 50%, #b8daf3 100%);
+    }
+    .top-block-name{
+        z-index: 0;
+    }
+    .top-block-name::after{
+      z-index: -1;
+       left: 0rem;
+    }
+}
+@media (max-width:449px){
+
+    .header-menu-nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header-menu-nav li{
+        padding: 10px 0;
+        text-align: center;
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 250px){
+    .top-block-name{
+        font-size:2rem;
+    }
+    #link-top-block{
+        padding-left: 0;
     }
 }

@@ -270,7 +270,7 @@ header a:active, header a:hover{
     .header-menu-nav li:nth-child(even){
         background: #b8daf3;
     }
-    footer{
+    footer a{
         font-size: .5rem;
     }
 }

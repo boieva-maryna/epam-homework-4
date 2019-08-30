@@ -167,7 +167,7 @@ header a:active, header a:hover{
         flex-wrap: wrap;
     }
     .header-menu-nav li{
-        padding: 10px 0;
+        padding: 5px 0;
         text-align: center;
         flex-basis: 50%;
     }

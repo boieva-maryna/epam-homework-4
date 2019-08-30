@@ -8,6 +8,7 @@ header,main,footer{
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 a:active,a:hover,a:visited{
     color: #E73B5A;

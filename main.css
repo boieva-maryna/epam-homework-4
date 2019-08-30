@@ -270,6 +270,9 @@ header a:active, header a:hover{
     .header-menu-nav li:nth-child(even){
         background: #b8daf3;
     }
+    footer{
+        font-size: .5rem;
+    }
 }
 @media (max-width: 250px){
     .top-block-name{

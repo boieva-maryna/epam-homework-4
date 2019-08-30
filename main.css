@@ -251,7 +251,8 @@ header a:active, header a:hover{
     }
     .triger-block li{
         padding: 5px;
-        flex-basis: 49%;
+        flex-shrink: 4;
+        flex-basis: 40%;
     }
     .contact-me-form{
         width: 70%;

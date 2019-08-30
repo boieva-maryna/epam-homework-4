@@ -55,11 +55,8 @@ header a:active, header a:hover{
 #link-top-block{
     padding-left: 2rem;
 }
-.right-block-photo{
-    width: 30%;
-    height: 30%;
-}
 .right-block-photo img{
+    box-sizing: border-box;
     display: block;
     height: 0%;
     width: 0%;
@@ -110,6 +107,34 @@ header a:active, header a:hover{
 @media (min-width:1024px){
     header{
         background-image:linear-gradient(60deg, #fff 0, #fff 50%, #b8daf3 50%, #b8daf3 100%);
+    }
+}
+@media (min-width:768px){
+    .about-me{
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 0.6fr 1fr;
+        -ms-grid-columns: 0.6fr 1fr;
+        /*grid-auto-rows: minmax(25vmax,max-content)*/;
+        grid-template-rows: 25vmax;
+        -ms-grid-rows: 25vw;
+        text-align: left;
+    }
+    .right-block-photo{
+        grid-column: 1/1;
+        -ms-grid-column: 1;
+        grid-row: 1/1;
+        -ms-grid-row: 1;
+    }
+    .left-block-info{
+        grid-column: 2/2;
+        -ms-grid-column: 2;
+    }
+}
+@media (min-width:768px) and (max-width:900px){
+    .about-me{
+        -ms-grid-rows: 30vw;
+        -ms-grid-columns: 0.7fr 1fr;
     }
 }
 @media (max-width:767px){

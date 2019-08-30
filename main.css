@@ -108,15 +108,17 @@ header a:active, header a:hover{
         height: 100%;
     }
 }
-.main-btn-learn, .btn-search{
+.main-btn-learn, .btn-search,.contact-form-submit-center{
     font-size: 1rem;
     border: 2px solid black;
     -webkit-box-shadow: 4px -2px 0px 2px #000000; 
     box-shadow: 4px -2px 0px 2px #000000;
-    margin: 5px;
     padding: 10px;
     background: white;
     text-transform: uppercase;
+}
+.main-btn-learn{
+    margin-right: 5px;
 }
 .about-me{
     display: grid;
@@ -138,8 +140,8 @@ header a:active, header a:hover{
 .triger-block li::before{
     content: "";
     display: block;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
 }
 .triger1::before{
     background-image: url("./images/idea.svg");
@@ -165,6 +167,18 @@ header a:active, header a:hover{
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+}
+.contact-me-form{
+    width: 50%;
+    margin: 20px auto;
+}
+.contact-me-form input, .contact-me-form textarea{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    border:1px solid #000;
+    padding: 5px;
 }
 @media (min-width: 1400px){
     html{
@@ -229,6 +243,9 @@ header a:active, header a:hover{
     .triger-block li{
         padding: 5px;
         flex-basis: 49%;
+    }
+    .contact-me-form{
+        width: 70%;
     }
 }
 @media (max-width:449px){

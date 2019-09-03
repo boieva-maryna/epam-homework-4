@@ -265,7 +265,9 @@ header a:active, header a:hover{
     }
     .work-holder-photo{
         width: 50vw;
-        margin: 0 auto;
+    }
+    .my-works-list-item:nth-child(even) .work-holder-photo{
+        margin-left: auto;
     }
 }
 @media (min-width:768px) and (max-width:900px){

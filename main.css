@@ -185,6 +185,9 @@ header a:active, header a:hover{
     border:1px solid #000;
     padding: 5px;
 }
+.left-block-info{
+    padding: 0 10%;
+}
 @media (min-width: 1400px){
     html{
         font-size: 1vw;
@@ -196,9 +199,6 @@ header a:active, header a:hover{
 @media (min-width:1024px){
     header{
         background-image:linear-gradient(60deg, #fff 0, #fff 50%, #b8daf3 50%, #b8daf3 100%);
-    }
-    .left-block-info{
-        padding: 0 10%;
     }
 }
 @media (min-width:768px){
@@ -223,8 +223,8 @@ header a:active, header a:hover{
 @media (min-width:768px) and (max-width:900px){
     .about-me{
         -ms-grid-rows: 30vw;
-        -ms-grid-columns: 0.85fr 1fr;
-        grid-template-columns: 0.85fr 1fr;
+        -ms-grid-columns: 0.8fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
     }
 }
 @media (max-width:850px){

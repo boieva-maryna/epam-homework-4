@@ -219,7 +219,7 @@ header a:active, header a:hover{
     -ms-grid-row: 3;
 }
 .work-holder-photo{
-    width: 50vw;
+    width: 70vw;
 }
 .work-holder-photo img{
     display: block;
@@ -228,9 +228,6 @@ header a:active, header a:hover{
 }
 .my-works-list-item:nth-child(even){
     text-align: right;
-}
-.my-works-list-item:nth-child(even) .work-holder-photo{
-    margin-left: 25%;
 }
 @media (min-width: 1400px){
     html{
@@ -262,6 +259,12 @@ header a:active, header a:hover{
         grid-column: 2/2;
         -ms-grid-column: 2;
         -ms-grid-row: 1;
+    }
+    .work-holder-photo{
+        width: 50vw;
+    }
+    .my-works-list-item:nth-child(even) .work-holder-photo{
+        margin-left: 25%;
     }
 }
 @media (min-width:768px) and (max-width:900px){

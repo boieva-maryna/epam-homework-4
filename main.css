@@ -197,6 +197,7 @@ header a:active, header a:hover{
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
+    list-style-position: inside;
 }
 .my-works-list-item:nth-child(odd){
     grid-column: 1/4;

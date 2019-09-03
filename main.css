@@ -4,6 +4,7 @@ html{
     background:white;
 }
 *{
+    padding: 0;
     box-sizing: border-box;
 }
 header,main,footer{
@@ -170,6 +171,7 @@ header a:active, header a:hover{
 .my-triger{
     min-height: 25vmin;
     display: flex;
+    display: -ms-flexbox;
     flex-direction: column;
     margin: 20px 0;
 }
@@ -187,6 +189,48 @@ header a:active, header a:hover{
 }
 .left-block-info{
     padding: 0 10%;
+}
+.my-works-list{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+}
+.my-works-list-item:nth-child(odd){
+    grid-column: 1/4;
+    -ms-grid-column: 1/4;
+}
+.my-works-list-item:nth-child(even){
+    grid-column: 2/5;
+    -ms-grid-column: 2/5;
+}
+.my-works-list-item:nth-child(1){
+    grid-row: 1;
+    -ms-grid-row: 1;
+}
+.my-works-list-item:nth-child(2){
+    grid-row: 2;
+    -ms-grid-row: 2;
+}
+.my-works-list-item:nth-child(3){
+    grid-row: 3;
+    -ms-grid-row: 3;
+}
+.work-holder-photo{
+    width: 50vw;
+}
+.work-holder-photo img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.my-works-list-item:nth-child(even){
+    text-align: right;
+}
+.my-works-list-item:nth-child(even) .work-holder-photo{
+    margin-left: 25%;
 }
 @media (min-width: 1400px){
     html{
